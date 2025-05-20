@@ -1,0 +1,28 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  
+  div.api-description
+    h2 Book Review API
+    p This is a comprehensive Book Review API that provides the following features:
+    
+    h3 Authentication
+    ul
+      li User signup and login functionality
+      li Secure authentication using JWT (JSON Web Tokens)
+    
+    h3 Book Operations
+    ul
+      li Get a list of all available books
+      li Retrieve detailed information about a specific book
+      li Add new books to the system
+    
+    h3 Review Management
+    ul
+      li Create reviews for books
+      li Update your existing reviews
+      li Delete your reviews
+      li View reviews for specific books
+      
