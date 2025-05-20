@@ -119,5 +119,5 @@ To import:
 ---
 
 🧩 Database Diagram
-![](github-files/details.png)
+![](github-files/dbschema.png)
 
