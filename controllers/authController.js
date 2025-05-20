@@ -1,7 +1,14 @@
+// Import user service functions and token generator
 import { createUser, findUserByUsername } from '../services/userService.js';
 import generateToken from '../utils/generateTokens.js';
 
-
+/**
+ * Handle user registration
+ * @route POST /api/auth/signup
+ * @param {Object} req.body - Contains username and password
+ * @returns {Object} JWT token for authentication
+ * @throws {400} If username is already taken
+ */
 export const signup = async (req, res) => {
   const { username, password } = req.body;
   try {
@@ -13,6 +20,13 @@ export const signup = async (req, res) => {
   }
 };
 
+/**
+ * Handle user login
+ * @route POST /api/auth/login
+ * @param {Object} req.body - Contains username and password
+ * @returns {Object} JWT token for authentication
+ * @throws {401} If credentials are invalid
+ */
 export const login = async (req, res) => {
   const { username, password } = req.body;
   const user = await findUserByUsername(username);
