@@ -78,7 +78,7 @@ Review
 
    ```bash
    git clone https://github.com/lunatictiol/books-review-api.git
-   cd book-review
+   cd book-review-api
    ```
 
 2. **Install dependencies:**
