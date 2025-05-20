@@ -70,6 +70,54 @@ Review
 * comment: String
 * Unique compound index on { user, book }
 
+---
+
+## How to Run
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/lunatictiol/books-review-api.git
+   cd book-review
+   ```
+
+2. **Install dependencies:**
+
+   ```bash
+   npm install
+   ```
+
+3. **Create a `.env` file** in the root directory with the following environment variables:
+
+   ```
+   MONGODB_URI=<your_mongodb_connection_string>
+   JWT_SECRET=<your_jwt_secret_key>
+   ```
+
+4. **Start the server:**
+
+   ```bash
+   npm start
+   ```
+
+The API will be available at `http://localhost:3000` by default.
+
+---
+
+## API Testing with Postman
+
+A Postman collection for all API endpoints is included in the repo as [`postman_collection.json`](./github-files/postman_collection.json).  
+
+You can import this file into Postman to easily test all API routes with predefined requests and example data.  
+
+To import:  
+1. Open Postman  
+2. Click on **Import**  
+3. Select the `postman_collection.json` file from the repo  
+4. Start sending requests!  
+
+---
+
 🧩 Database Diagram
 ![](github-files/details.png)
 

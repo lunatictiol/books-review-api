@@ -2,7 +2,6 @@ import { addReview, updateReview, deleteReview } from '../services/reviewService
 
 export const submitReview = async (req, res) => {
   try {
-    console.log("here")
     const review = await addReview({ ...req.body, user: req.user._id, book: req.params.id });
     res.json(review);
   } catch (err) {
